@@ -1,8 +1,8 @@
 # State COVID-19 Vaccine Website Analysis
 
-This is the data used for our story "[We Ran Tests on Every State’s COVID-19 Vaccine Website](https://themarkup.org/TKTK)".
+This is the data used for our story "[We Ran Tests on Every State’s COVID-19 Vaccine Website](https://themarkup.org/TKTK)."
 
-We looked at the vaccine finder pages for all 50 states plus Puerto Rico and Washington DC. We wanted to find out more about the web infrastructure used by each site. We started with a list of state vaccine pages listed by the [Department of Health and Human Services](https://www.vaccines.gov/get-vaccinated). In some cases we chose a more specific page where a user would be able to locate a vaccination.
+We looked at the vaccine finder pages for all 50 states plus Puerto Rico and Washington, D.C. We wanted to find out more about the web infrastructure used by each site. We started with a list of state vaccine pages listed by the [Department of Health and Human Services](https://www.vaccines.gov/get-vaccinated). In some cases we chose a more specific page where a user would be able to locate a vaccination.
 
 We looked at three areas:
 
@@ -12,7 +12,7 @@ We looked at three areas:
 
 ## Privacy and tracking
 
-We used The Markup's own privacy inspector [Blacklight](https://themarkup.org/blacklight) to analyze these sites. Blacklight performs seven tests looking for specific user-tracking technologies.
+We used The Markup's own privacy inspector, [Blacklight](https://themarkup.org/blacklight), to analyze these sites. Blacklight performs seven tests looking for specific user-tracking technologies.
 
 You can read the methodology for Blacklight [here](https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector). 
 
@@ -28,16 +28,16 @@ We also captured the raw HAR file from the Blacklight analysis, which includes a
 
 ## Performance and Accessibility
 
-We wanted to record some measure of technical quality for these sites, which translates into a real world impact on users searching for a life-saving vaccine, with each state having a different set of rules and technical infrastructure.
+We wanted to record some measure of technical quality for these sites, which translates into a real-world impact on users searching for a life-saving vaccine, with each state having a different set of rules and technical infrastructure.
 
 We used Google's widely used [Lighthouse](https://developers.google.com/web/tools/lighthouse#cli) website testing suite to analyze these sites, and we chose three of the many audits available in the tool:
 
-- [Performance](https://web.dev/lighthouse-performance/): A general purpose test measuring how long it takes until a page has loaded, and can be used. This returns a weighted percentage score between 0 and 100, with 100 being the best.  
+- [Performance](https://web.dev/lighthouse-performance/): A general purpose test measuring how long it takes until a page has loaded and can be used. This returns a weighted percentage score between 0 and 100, with 100 being the best.  
 
-- [Accessibility](https://web.dev/lighthouse-accessibility/): This test measures which technologies have been used to help make the page more accessible to users with disabilities, and people who may be using assistive technology like screen readers to access the site. The Americans with Disabilities Act requires websites accomodate disabled users, and these scores help determine what improvements could be made. This returns a weighted percentage score between 0 and 100, with 100 being the best.
+- [Accessibility](https://web.dev/lighthouse-accessibility/): This test measures which technologies have been used to help make the page more accessible to users with disabilities and people who may be using assistive technology like screen readers to access the site. The Americans with Disabilities Act requires websites to accommodate disabled users, and these scores help determine what improvements could be made. This returns a weighted percentage score between 0 and 100, with 100 being the best.
 
 ## Testing
-Website testing can vary greatly as there are so many factors that can affect the results, such as network congestion, web infrastructure availability and other issues. To correct for this, we ran the tests in three sessions, from three locations in the U.S. at three different times. Each test session ran the Lighthouse tests ten times in a row for each state. We use the mean score for all 30 tests per state. All testing was for the mobile version of these websites. 
+Website testing can vary greatly as there are so many factors that can affect the results, such as network congestion, web infrastructure availability, and other issues. To correct for this, we ran the tests in three sessions, from three locations in the U.S. at three different times. Each test session ran the Lighthouse tests 10 times in a row for each state. We use the mean score for all 30 tests per state. All testing was for the mobile version of these websites. 
 
 - Test session 1 - March 19, 2021 4 P.M. - 8 P.M EDT. - Greater New York City Area, NY 
 - Test session 2 - March 20, 2021 3 A.M. - 9:30 A.M. EDT - Los Angeles, CA (via VPN)
@@ -61,11 +61,11 @@ Website testing can vary greatly as there are so many factors that can affect th
   <tbody>
     <tr>
       <td><strong>state</strong></td>
-      <td>The postal abbreviation for the state / territory / district which runs the vaccination page.</td>
+      <td>The postal abbreviation for the state / territory / district that runs the vaccination page.</td>
     </tr>
     <tr>
       <td><strong>state_long</strong></td>
-      <td>The state / territory / district which runs the vaccination page.</td>
+      <td>The state / territory / district that runs the vaccination page.</td>
     </tr>
      <tr>
       <td><strong>url</strong></td>
@@ -121,7 +121,7 @@ Website testing can vary greatly as there are so many factors that can affect th
 
 ## Limitations
 
-Website testing is dependent upon a huge number of variables including network congestion, web service availability, the state of the computer running the tests and many other factors. 
+Website testing is dependent upon a huge number of variables, including network congestion, web service availability, the state of the computer running the tests, and many other factors. 
 
 Using a VPN for the tests in other cities is not a perfect way to test for geographic differences in test results. 
 Read the full methodology for Blacklight, along with its own limitations [here](https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#limitations). 
