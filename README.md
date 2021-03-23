@@ -46,7 +46,7 @@ Website testing can vary greatly as there are so many factors that can affect th
 ## Data
 [state_vaccine_websites.csv](https://github.com/the-markup/state_covid-19-vaccine_websites_audit/blob/main/state_vaccine_websites.csv) - *33 KB. 53 rows. First row is the header*.
 
-`screenshots/` - A collection of each site's mobile screenshot captured by Blacklight. 
+[screenshots/](https://github.com/the-markup/state_covid-19-vaccine_websites_audit/tree/main/screenshots) - A collection of each site's mobile screenshot captured by Blacklight. 52 JPEG files. 1125 x 2436 pixels @ 72dpi. 
 
 ## Data Dictionary 
 												
